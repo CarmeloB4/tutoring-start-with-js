@@ -1,6 +1,6 @@
 # Array 🗄️
-In questi esercizi sugli array abbiamo avuto modo la potenza dei metodi. Ovviamente conoscerli tutti a memoria è impossibile, ma si devono assolutamente sapere. Questo per conoscere o avere un idea di come possiamo lavorare con gli array.
-Il sito di riferimento è assolutamente uno: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?retiredLocale=it
+In questi esercizi sugli array abbiamo avuto modo la potenza dei metodi. Ovviamente conoscerli tutti a memoria è impossibile, ma si devono assolutamente sapere. Questo per conoscere o avere un idea di come possiamo lavorare con gli array.<br>
+Il sito di riferimento è assolutamente uno: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array?retiredLocale=it <br>
 Altro sito molto utile: https://javascript.info/array-methods
 
 <hr> 
