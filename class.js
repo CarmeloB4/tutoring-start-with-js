@@ -20,4 +20,4 @@ const authUser2 = new AuthenticationUser(2, "Pluto", "Paperino",10, "Bau@")
 
 console.log(authUser, authUser2)
 
-console.log(authUser.fullname)
+console.log("Fullname",authUser.fullname)
