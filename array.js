@@ -24,19 +24,19 @@ function getHottestCity(cities) {
   return hottestCities
 }
 
-console.log(getHottestCity(weathers));
+console.log("for of solution",getHottestCity(weathers));
 
 // In questo caso ci siamo appogiati ad un array, per pushare ogni città che rispetta la nostra condizione e ritornare appunto, l'array di città
 // Vediamo invece come poteva essere semplicemente scritto con il metodo filter degli array
 
 let hottestCities = weathers.filter((city) => city.temp > 20)
-console.log(hottestCities)
+console.log("filter solution", hottestCities)
 
 // Allo stesso modo possiamo risolvere il secondo esercizio, utilizzando il metodo degli array find
 let firstHottestCity = weathers.find((city) => city.temp < 25)
-console.log(firstHottestCity)
+console.log("First Hottest City",firstHottestCity)
 
------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 
 //1. Se l'oggetto è false, metti una proprietà type equivalente a "Slow"
 
@@ -60,6 +60,6 @@ function getSlowCars(cars) {
 // Con filter abbiamo filtrato tutti gli oggetti con la proprietà 'isFast' false, con il map invece, per ogni oggetto ne abbiamo creato uno nuovo
 // Il nuovo oggetto è formato da, le 'vecchie' proprietà dell'oggetto e la nuova proprietà "type: 'Slow'"
 
-console.log(getSlowCars(cars))
+console.log("Slow cars", getSlowCars(cars))
 
 // Trovi altre meggiori info nel readme
