@@ -37,3 +37,29 @@ let firstHottestCity = weathers.find((city) => city.temp < 25)
 console.log(firstHottestCity)
 
 -----------------------------------------------------------------------------
+
+//1. Se l'oggetto è false, metti una proprietà type equivalente a "Slow"
+
+const cars = [
+    {name: "Audi", isFast: true},
+    {name: "Fiat", isFast: false}, 
+    {name: "Suzuki", isFast: false},
+    {name: "Toyota", isFast: true},
+    {name: "Mercedes", isFast: true},
+    {name: "Opel", isFast: false},
+];
+
+// Per risolvere questo esercizio, non basta un solo metodo degli array, infatti oltre al metodo filter dovremmo utilizzare un map per inserire questa nuova proprietà
+
+function getSlowCars(cars) {
+    const filteredCars = cars.filter((c) => !c.isFast);
+    const mappedCars = filteredCars.map((f) => ({...f, type: "Slow"}));
+    return mappedCars
+}
+
+// Con filter abbiamo filtrato tutti gli oggetti con la proprietà 'isFast' false, con il map invece, per ogni oggetto ne abbiamo creato uno nuovo
+// Il nuovo oggetto è formato da, le 'vecchie' proprietà dell'oggetto e la nuova proprietà "type: 'Slow'"
+
+console.log(getSlowCars(cars))
+
+// Trovi altre meggiori info nel readme
