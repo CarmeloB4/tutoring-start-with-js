@@ -1,9 +1,13 @@
-# Promises 🔀
-Partiamo con la definizione di promise: La promise è un oggetto che può produrre un unico valore in futuro. Questo valore può essere una resolve (tutto andato a buon fine) o una reject. Perché in futuro? Perché tramite le promise noi possiamo andare a gestire gli eventi asincroni. <br>
-Nel nostro esercizio, abbiamo gestito la promise in due modi diversi. <br>
+# Fetch 🌐
+Intanto prima di vedere cosa fa il metodo fetch, vediamo un attimo il protocollo delle chiamate di rete <br>
+![api](tutoring-start-with-js\api.png)
+Per approfondire meglio l'argomento vi lascio un articolo https://www.freecodecamp.org/news/rest-apis/ <br>
+Fatta questa analisi, andiamo a vedere cosa faccia il metodo fetch. Fetch fornisce un'interfaccia per il recupero delle risorse (anche attraverso chiamate di rete). <br>
+Importante ricordare che fetch ritorna una promise con tutta la risposta della chiamata HTTP
+Per estrapolare poi dalla response quello che realmente ci serve (il body), andiamo ad utilizzare un metodo che ci fornisce l'interfaccia Response, il json.
+Per approfondire: https://developer.mozilla.org/en-US/docs/Web/API/Response/json
+## headers
+Quando parliamo di headers, parliamo di un parametro che forniamo alla chiamata di rete per fornire informazioni riguardanti la chiamata di rete che stiamo facendo (il tipo della chiamata, ect)
 
-## then()
-Nel primo esempio abbiamo gestito la promise con i metodi che abbiamo a disposizione, then, catch e finally. Questi ci permettono di gestire la asincronicità della chiamata ed evenutali errori (catch)
-<br><br>
-## Async/await
-Nel secondo esempio abbiamo gestito l'asincronicità con async/await, quindi, la nostra funzione non si completerà fin quando la promise sarà conclusa. Abbiamo anche inserito un blocco try/catch per gestire il caso di reject ed il finally per segnalare il completamento della gestione della nostra promise
+Articolo di approfondimento sul fetch: https://www.freecodecamp.org/news/javascript-fetch-api-tutorial-with-js-fetch-post-and-header-examples/
+Libreria per utilizzare fetch: https://www.npmjs.com/package/node-fetch
